@@ -157,14 +157,19 @@ a:hover {
   padding-bottom: 30px;
 }
 
+#sidebar .section h2{
+  float:right;
+}
+
 #sidebar .headline {
   padding-top: 15px;
 }
 
 #sidebar .icons {
-  padding-top: 9px;
-  padding-right: 9px;
+  padding-top: 0;
+  padding-right: 0x;
   line-height: 0;
+  float:left;
 }
 
 #sidebar .icons td.last {
