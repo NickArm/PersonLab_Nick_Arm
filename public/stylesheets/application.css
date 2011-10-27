@@ -14,8 +14,10 @@
  * under the License.
  */
 html{
+   min-height:100%;
    background-color:silver;
    background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+   background-image:-moz-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.5) 35px, rgba(255, 255, 255, 0.5) 70px)
 }
 
 
@@ -194,6 +196,7 @@ a:hover {
 
 ul{
 list-style-type: none;
+padding:5px;
 }
 
 ul.archive {
