@@ -37,23 +37,29 @@
 
 	</div>  
 	<div id="main">
-    <div id="sidebar">      
-      <div class="section">
+    <div id="sidebar"> 
+
+     
+      
+<ul>
+<li>
         <h2>Subscribe to my blog</h2>
         <div class="icons"><a href="<%= (FEED_URL || rss_blogs_url) %>"><%= image_tag("feed-big.png") %></a></div>
-      </div>
+      
+</li>
+<li>
 
-
-<div class="section">
         <h2>Subscribe to my twitter</h2>
         <div class="icons"><a href="https://twitter.com/#!/Nick_Arm"><%= image_tag("twitter.png") %></a></div>
-      </div>
+     
+</li>
+<li>
 
-<div class="section">
         <h2>Subscribe to my facebook</h2>
         <div class="icons"><a href="http://www.facebook.com/armenisnick"><%= image_tag("facebook.png") %></a></div>
-      </div>
-
+      
+</li>
+</ul>
 
       <div class="section">
         <%= raw @setting.home_show %>
