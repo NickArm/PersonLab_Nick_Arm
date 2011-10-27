@@ -166,9 +166,9 @@ a:hover {
 }
 
 #sidebar .icons {
-  padding-top: 0;
-  padding-right: 0x;
-  line-height: 0;
+  padding-top: 9px;
+  padding-right: 9px;
+  line-height: 9px;
   float:left;
 }
 
