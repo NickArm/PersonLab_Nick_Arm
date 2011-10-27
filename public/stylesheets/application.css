@@ -157,8 +157,9 @@ a:hover {
   padding-bottom: 75px;
 }
 
-#sidebar h2{
+#sidebar .section h2{
   float:right;
+  margin:none;
 }
 
 #sidebar .headline {
