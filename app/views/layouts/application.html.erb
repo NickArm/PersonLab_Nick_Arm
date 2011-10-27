@@ -21,7 +21,8 @@
 <body>
 <div id="body">
 	<div id="header">
-	<div class="title"><a id="site_name" href="/"><%= @setting.site_name %></a></div>		
+	<div class="title"><a id="site_name" href="/"><%= @setting.site_name %></a></div>	
+ 	<div class="tittle_logo"><%= image_tag("rsslogo.png")%></div>	
         <div class="menu">
       <% if !@menus.blank? %>
         <% for item in @menus %>

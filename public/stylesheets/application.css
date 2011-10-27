@@ -114,7 +114,8 @@ a:hover {
 #header .menu a:hover {text-decoration: none;}
 #header .title a:link,
 #header .title a:hover,
-#header .title a:visited { font-size:20px; color:#FFF; text-decoration: none;}
+#header .title a:visited { font-size:45px; color:black; text-decoration: none;}
+#header .tittle_logo{}
 
 #footer,
 #main {
