@@ -13,6 +13,11 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
+html{
+   background-color:silver;
+   background-image:-webkit-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba   (255,255,255,.5) 70px);
+}
+
 
 body {
   -moz-tab-size: 4;
@@ -187,9 +192,11 @@ a:hover {
   margin-bottom: 1em;
 }
 
+ul{
+list-style-type: none;
+}
 
 ul.archive {
-list-style-type: none;
 margin: 0;
 padding: 0;
 }
