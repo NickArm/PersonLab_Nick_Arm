@@ -8,10 +8,10 @@ class Setting < ActiveRecord::Base
       if not @setting
         @setting = new(:site_name => "PersonLab Demo", :sub_title => "This is an person website build by Ruby on Rails.", 
           :meta_keywords => "personlab,ruby on rails", 
-          :email => "huacnlee@gmail.com",
+          :email => "armenisnick@hotmail.com",
           :meta_description => "This is an person website build by Ruby on Rails.",
-          :twitter_id => "huacnlee",
-          :google_reader_id => "08982619185204047523",
+          :twitter_id => "Nick_Arm",
+          :google_reader_id => "0222555585204047777",
           :home_show => '')
         @setting.save
       end
