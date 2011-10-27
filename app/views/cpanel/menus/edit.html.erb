@@ -4,7 +4,7 @@
   <%= render "shared/error_messages", :target => @menu %>
 	<table border="0" cellspacing="0" cellpadding="0">
 		<tr class="row">
-			<td class="field">名称</td>
+			<td class="field">Name</td>
 			<td><%= f.text_field :name, :class => "text short" %></td>
 		</tr>
 		<tr class="row">
@@ -12,16 +12,16 @@
 			<td><%= f.text_field :url, :class => "text long" %></td>
 		</tr>
 		<tr class="row">
-			<td class="field">排序</td>
-			<td><%= f.text_field :sort, :class => "text short" %> <span class="tip">大的在前</span></td>
+			<td class="field">Sort</td>
+			<td><%= f.text_field :sort, :class => "text short" %> <span class="tip">The first large</span></td>
 		</tr>
 		<tr class="row">
 			<td class="field"></td>
-			<td><%= f.check_box :new_window %> <%= f.label :new_window, "以新窗口打开" %></td>
+			<td><%= f.check_box :new_window %> <%= f.label :new_window, "Open a new window" %></td>
 		</tr>
 		<tr class="buttons row">
 			<td class="field"></td>
-			<td><%= f.submit (@menu.id ? "保存" : "创建")%> 或 <%= link_to '返回', :action => "index" %></td>
+			<td><%= f.submit (@menu.id ? "Save" : "Create")%> Or <%= link_to 'Return', :action => "index" %></td>
 		</tr>
 	</table>
 	<% end %>

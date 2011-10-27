@@ -4,7 +4,7 @@
     <%= render "shared/error_messages", :target => @page %>
 <table border="0" cellspacing="0" cellpadding="0">
 	<tr class="row">
-		<td class="field">标题</td>
+		<td class="field">Title</td>
 		<td><%= f.text_field :title, :class => 'text' %></td>
 	</tr>
 	<tr class="row">
@@ -12,22 +12,22 @@
 		<td><%= f.text_field :slug, :class => 'text' %></td>
 	</tr>
 	<tr class="row">
-		<td class="field" valign="top">页面内容</td>
+		<td class="field" valign="top">Page content</td>
 		<td>
 		<%= f.text_area :body, :class => 'text long' %><br />
 		<p class="tip_p">
-			这里使用 Markdown 格式, 请阅读 <%= link_to "这篇文档", "http://daringfireball.net/projects/markdown/" %></a>.
+			Used here Markdown Format, Read <%= link_to "This document", "http://daringfireball.net/projects/markdown/" %></a>.
 		</p>
 		</td>
 	</tr>
 	<tr class="row">
-		<td class="field">状态</td>
+		<td class="field">Status</td>
 		<td><%= select("page","status",Post::STATUS,{:selected => @page.status}) %></td>
 	</tr>
 	<tr class="buttons">
 		<td class="field"></td>
 		<td>
-      <%= f.submit "保存", :class => "button submit" %> or <%= link_to 'Back', cpanel_pages_path %>
+      <%= f.submit "Save", :class => "button submit" %> or <%= link_to 'Back', cpanel_pages_path %>
 		</td>
 	</tr>
 </table>

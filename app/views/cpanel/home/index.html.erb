@@ -1,26 +1,26 @@
 <div id="left_side">
   <div class="box quick">
-    <h3>快捷链接</h3>
+    <h3>Quick Links</h3>
     <ul>
-      <li><%= link_to "撰写文章", :controller => "cpanel/posts", :action => "new" %></li>
-      <li><%= link_to "创建一个新页面", :controller => "cpanel/pages", :action => "new" %></li>
-      <li><%= link_to "修改系统设置", :controller => "cpanel/settings", :action => "index" %></li>
+      <li><%= link_to "Writing articles", :controller => "cpanel/posts", :action => "new" %></li>
+      <li><%= link_to "Create a new page", :controller => "cpanel/pages", :action => "new" %></li>
+      <li><%= link_to "Modify the system settings", :controller => "cpanel/settings", :action => "index" %></li>
     </ul>
   </div>
   <div class="box statistics">
-      <h3>统计信息</h3>
+      <h3>Statistics</h3>
       <ul>
-          <li>目前有 <span class="num"><%= @total[:post_count] %></span> 篇博客文章</li>
-          <li>此外还有 <span class="num"><%= @total[:page_count] %></span> 个独立页面</li>
+          <li>There are <span class="num"><%= @total[:post_count] %></span> Articles blog posts</li>
+          <li>In addition, there <span class="num"><%= @total[:page_count] %></span> Separate page</li>
       </ul>
   </div>
 </div>
 <div id="middle_side">
   <div class="box recent_posts">
-    <h3>最近发表的博客</h3>
+    <h3>Recently published a blog</h3>
     <ul>
       <% for item in @recent_posts %>
-      <li><a href="<%= blog_path(item.slug)%>"><%= item.title %></a> 发布于 <%= item.created_at_s  %></li>
+      <li><a href="<%= blog_path(item.slug)%>"><%= item.title %></a> Released in <%= item.created_at_s  %></li>
       <% end %>
     </ul>
   </div>

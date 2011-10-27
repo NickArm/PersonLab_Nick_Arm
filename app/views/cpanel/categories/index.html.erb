@@ -4,9 +4,9 @@
 <% if !@categories.blank? %>
 	<table class="grid" border="0" cellspacing="0" cellpadding="0">
 		<tr class="head">
-			<td class="name first">名称</td>
+			<td class="name first">Name</td>
 			<td class="slug">Slug</td>
-			<td class="posts_count">文章数</td>
+			<td class="posts_count">Messages</td>
 			<td class="opt"></td>
 		</tr>
 		<% for item in @categories %>
@@ -15,8 +15,8 @@
 			<td class="slug"><%= item.slug %></td>
 			<td class="posts_count"><%= item.posts_count %></td>
 			<td class="opt">
-				<%= link_to "修改", edit_cpanel_category_url(item) %> 
-				<%= link_to '删除', cpanel_category_url(item), :confirm => '确定要删除吗?', :method => :delete %>
+				<%= link_to "Edit", edit_cpanel_category_url(item) %> 
+				<%= link_to 'Delete', cpanel_category_url(item), :confirm => 'You sure you want to delete it?', :method => :delete %>
 			</td>
 		</tr>
 		<% end %>

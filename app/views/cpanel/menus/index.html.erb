@@ -4,10 +4,10 @@
 <% if !@menus.blank? %>
 	<table class="grid" border="0" cellspacing="0" cellpadding="0">
 		<tr class="head">
-			<td class="name first">名称</td>
+			<td class="name first">Name</td>
 			<td class="url">Url</td>
-			<td class="sort">排序</td>
-			<td class="new_window">打开方式</td>
+			<td class="sort">Sort</td>
+			<td class="new_window">Open</td>
 			<td class="opt"></td>
 		</tr>
 		<% for item in @menus %>
@@ -15,10 +15,10 @@
 			<td class="name first"><%= item.name %></td>
 			<td class="url"><a href="<%= item.url %>" target="_blank"><%= item.url %></a></td>
 			<td class="sort"><%= item.sort %></td>
-			<td class="new_windows"><%= item.new_window ? '新窗口' : "当页" %></td>
+			<td class="new_windows"><%= item.new_window ? 'New window' : "When the page" %></td>
 			<td class="opt">
-				<%= link_to "修改", edit_cpanel_menu_url(item) %> 
-				<%= link_to '删除', cpanel_menu_url(item), :confirm => 'Are you sure?', :method => :delete %>
+				<%= link_to "Modify", edit_cpanel_menu_url(item) %> 
+				<%= link_to 'Delete', cpanel_menu_url(item), :confirm => 'Are you sure?', :method => :delete %>
 			</td>
 		</tr>
 		<% end %>
