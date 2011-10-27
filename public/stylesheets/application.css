@@ -89,7 +89,7 @@ pre {
 
 a,
 a code {
-  color: #00c;
+  color: grey;
   text-decoration: none;
 }
 
@@ -230,14 +230,16 @@ padding:5px;
 ul.archive {
 margin: 0;
 padding: 0;
+width:60%;
 }
 ul.archive li {
 margin-bottom: 1em;
 }
-ul.archive li .date { color:#999; margin-left:10px; font-size:14px;}
+ul.archive li .date { color:#999; margin-left:0px; font-size:14px;}
 ul.archive a {
 font-family: "Helvetica Nue", Helvetica, Arial, sans-serif;
 font-size: 14pt;
+display:block;
 }
 
 #tweet  { margin-top:40px; }
