@@ -158,7 +158,8 @@ a:hover {
 }
 
 #sidebar .section h2{
-  float:right;
+  display:inline;
+  margin:none;
 }
 
 #sidebar .headline {
@@ -169,7 +170,7 @@ a:hover {
   padding-top: 0;
   padding-right: 0x;
   line-height: 0;
-  float:left;
+  display:inline;
 }
 
 #sidebar .icons td.last {
