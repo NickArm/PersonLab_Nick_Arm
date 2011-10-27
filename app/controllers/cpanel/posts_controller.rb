@@ -34,7 +34,7 @@ class Cpanel::PostsController < Cpanel::ApplicationController
 
     respond_to do |format|
       if @post.save
-        save_notice("文章创建成功,可以 <a href=\"#{blog_path(@post.slug)}\" target=\"_blank\">点击这里</a> 查看")
+        save_notice("Article to create a successful,Can <a href=\"#{blog_path(@post.slug)}\" target=\"_blank\">Click here</a> View")
         format.html { redirect_to :controller => "posts", :action => "index" }
         format.xml  { render :xml => @post, :status => :created, :location => @post }
       else
@@ -52,7 +52,7 @@ class Cpanel::PostsController < Cpanel::ApplicationController
     respond_to do |format|
       if @post.update_attributes(params[:post])
         logger.debug { "post_update" }
-        save_notice("文章修改成功,可以 <a href=\"#{blog_path(@post.slug)}\" target=\"_blank\">点击这里</a> 查看")
+        save_notice("Successfully modified the article,Can <a href=\"#{blog_path(@post.slug)}\" target=\"_blank\">Click here</a> View")
         format.html { redirect_to :controller => "posts", :action => "index" }
         format.xml  { head :ok }
       else
@@ -69,7 +69,7 @@ class Cpanel::PostsController < Cpanel::ApplicationController
     @post.destroy
 
     respond_to do |format|
-      save_notice("文章删除成功.")
+      save_notice("Posts deleted successfully.")
       format.html { redirect_to(cpanel_posts_url) }
       format.xml  { head :ok }
     end

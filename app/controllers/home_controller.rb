@@ -36,7 +36,7 @@ class HomeController < ApplicationController
   
   def share
     set_nav_actived("share")
-    set_seo_meta("Google Reader 分享")
+    set_seo_meta("Google Reader Share")
     @api_url = Share.api_url(@setting)
     @shares = Share.find_all(@setting)
   end
@@ -54,7 +54,7 @@ class HomeController < ApplicationController
                       :unfollowerable_type => params[:type].capitalize, 
                       :unfollowerable_id => params[:id].to_i)
                       
-    render :text => "你已经成功退定."
+    render :text => "You have successfully set back."
   end
   
   def guest_login

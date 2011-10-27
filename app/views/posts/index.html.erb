@@ -10,7 +10,7 @@
 	        <%= raw item.summary %>
 	      </div>		
 	      <div class="footer"> 
-	        <a href="<%= blog_path(item.slug, :anchor => "disqus_thread") %>" title="查看评论" data-disqus-identifier="disqus:huacnlee:posts:<%= item.id %>">Comments</a>,
+	        <a href="<%= blog_path(item.slug, :anchor => "disqus_thread") %>" title="View comments" data-disqus-identifier="disqus:huacnlee:posts:<%= item.id %>">Comments</a>,
 	        <a href="<%= blog_path(item.slug)%>"><%= item.view_count + item.delay_view_count %> Views</a>
 	      </div>
 	    </div>		
@@ -18,7 +18,7 @@
 	  <%= will_paginate @posts %>
 	<% else %>
 	  <div class="none_result">
-	    作者还未发表过文章.
+	    The authors also unpublished article.
 	  </div>
 	<% end %>
 </div>

@@ -1,7 +1,7 @@
 # coding: utf-8 
 require "digest/md5"
 class User < ActiveRecord::Base
-  validates_presence_of :uname, :pwd, :name,:message => "不能为空."
+  validates_presence_of :uname, :pwd, :name,:message => "Can not be empty."
   
   def self.encode(pwd)
     Digest::MD5.hexdigest("--@*&^!*987-!^!*--#{pwd}")
@@ -11,25 +11,25 @@ class User < ActiveRecord::Base
     find(:first, :conditions => ['uname = ? and pwd = ?', uname, pwd])
   end
 
-  # 更新密码
+  # Update Password
   def update_pwd(old_pwd,new_pwd,confirm_pwd)
     if old_pwd.blank?
-      self.errors.add("旧密码","还未填写。")
+      self.errors.add("Old Password","Not yet complete。")
       return false
     end
 
     if new_pwd.blank?
-      self.errors.add("新密码","还未填写。")
+      self.errors.add("New password","Not yet complete。")
       return false
     end
 
     if User.encode(old_pwd) != self.pwd
-      self.errors.add("旧密码","不正确。")
+      self.errors.add("Old Password","Incorrect。")
       return false
     end
 
     if new_pwd != confirm_pwd
-      self.errors.add("新密码与确认密码","不一至。")
+      self.errors.add("New Password and Confirm Password","Different to。")
       return false
     end
 

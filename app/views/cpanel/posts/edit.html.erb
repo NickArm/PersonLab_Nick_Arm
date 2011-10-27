@@ -11,7 +11,7 @@
   <%= render "shared/error_messages", :target => @post %>
 	<table border="0" cellspacing="0" cellpadding="0">
 		<tr class="row">
-			<td class="field">标题</td>
+			<td class="field">Title</td>
 			<td><%= f.text_field :title, :class => "text long" %></td>
 		</tr>
 		<tr class="row">
@@ -19,14 +19,14 @@
 			<td><%= f.text_field :slug, :class => "text" %></td>
 		</tr>
 		<tr class="row">
-			<td class="field" valign="top">内容</td>
+			<td class="field" valign="top">Content</td>
 			<td>
         <%= f.text_area :body, :class => "text long tinymce", :rows => "40"  %>
 			</td>
 		</tr>
 		<tr class="row">
 			<td class="field"></td>
-			<td><h4>Meta 信息</h4></td>
+			<td><h4>Meta Information</h4></td>
 		</tr>
 		<tr class="row">
 			<td class="field"><%= f.label :meta_keywords, "Keywords" %></td>
@@ -38,16 +38,16 @@
 		</tr>
 		<tr class="row">
 			<td class="field"></td>
-			<td><h4>其他</h4></td>
+			<td><h4>Other</h4></td>
 		</tr>
 		<tr class="row">
-			<td class="field">分类</td>
+			<td class="field">Classification</td>
 			<td>
 				<%= f.select(:category_id, Category.all.collect { |c| [c.name,c.id] }) %>
 			</td>
 		</tr>
 		<tr class="row">
-			<td class="field">状态</td>
+			<td class="field">Status</td>
 			<td>
 				<%= select("post","status",Post::STATUS,{:selected => @post.status}) %>
 			</td>
@@ -58,7 +58,7 @@
 		</tr>
 		<tr class="buttons row">
 			<td class="field"></td>
-			<td><%= f.submit( (@post.id ? "保存" : '发布'), :class => "button submit") %> 或 <%= link_to "返回列表", :action => "index" %></td>
+			<td><%= f.submit( (@post.id ? "Save" : 'Release'), :class => "button submit") %> Or <%= link_to "Back to list", :action => "index" %></td>
 		</tr>
 	</table>
 <% end %>

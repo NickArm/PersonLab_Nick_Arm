@@ -36,7 +36,7 @@ class Cpanel::CategoriesController < Cpanel::ApplicationController
     @category = Category.new(params[:category])
 
     if @category.save
-      flash[:notice] = '分类创建成功.'
+      flash[:notice] = 'Creating a successful classification.'
       redirect_to(cpanel_categories_path)
     else
       render :action => "edit"
@@ -48,7 +48,7 @@ class Cpanel::CategoriesController < Cpanel::ApplicationController
   def update
     @category = Category.find(params[:id])
     if @category.update_attributes(params[:category])
-      flash[:notice] = '分类修改成功.'
+      flash[:notice] = 'Successfully modified classification.'
       redirect_to(cpanel_categories_path)
     else
       render :action => "edit"

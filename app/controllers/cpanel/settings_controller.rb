@@ -9,7 +9,7 @@ class Cpanel::SettingsController < Cpanel::ApplicationController
 
     if request.put?
       if @setting.update_attributes(params[:setting])
-        save_notice("设置修改成功.")
+        save_notice("Settings changed successfully.")
         redirect_to :controller => "settings"
       else
         render :action => "index"
@@ -23,7 +23,7 @@ class Cpanel::SettingsController < Cpanel::ApplicationController
   def password
     if request.put?
       if @current_user.update_pwd(params[:old_pwd], params[:new_pwd], params[:confirm_pwd])
-        save_notice("密码修改成功。")
+        save_notice("Password changed successfully。")
         redirect_to :action => "password"
       end
     end
@@ -36,7 +36,7 @@ class Cpanel::SettingsController < Cpanel::ApplicationController
       @current_user.name = pu[:name]
       @current_user.email = pu[:email]
       if @current_user.save
-        save_notice("管理员信息修改成功。")
+        save_notice("Administrator information changed successfully。")
         redirect_to :action => "profile"
       end
     end

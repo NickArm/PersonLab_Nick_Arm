@@ -11,12 +11,12 @@ class Cpanel::PagesController < Cpanel::ApplicationController
   
   cache_sweeper :page_sweeper,:only => [:create,:update,:destory]
   
-  # 页面列表
+  # Page list
   def index
     @pages = Page.find_list(1)
   end  
   
-  # 创建页面
+  # Create a page
   # GET /pages/new
   # GET /pages/new.xml
   def new
@@ -29,7 +29,7 @@ class Cpanel::PagesController < Cpanel::ApplicationController
   end
 
   
-  # 修改页面
+  # Modify the page
   # GET /pages/1/edit
   def edit
     @page = Page.find(params[:id])
@@ -40,7 +40,7 @@ class Cpanel::PagesController < Cpanel::ApplicationController
     end
   end
 
-  # 提交页面信息
+  # Submit information page
   # POST /pages
   # POST /pages.xml
   def create
@@ -48,7 +48,7 @@ class Cpanel::PagesController < Cpanel::ApplicationController
 
     respond_to do |format|
       if @page.save
-        save_notice("页面创建成功,可以 <a href=\"#{page_path(@page.slug)}\" target=\"_blank\">点击这里</a> 查看.")
+        save_notice("Page created successfully,Can <a href=\"#{page_path(@page.slug)}\" target=\"_blank\">Click here</a> View.")
         format.html { redirect_to :action => "index" }
         format.xml  { render :xml => @page, :status => :created, :location => @page }
       else
@@ -58,7 +58,7 @@ class Cpanel::PagesController < Cpanel::ApplicationController
     end
   end
 
-  # 更新页面
+  # Update page
   # PUT /pages/1
   # PUT /pages/1.xml
   def update
@@ -66,7 +66,7 @@ class Cpanel::PagesController < Cpanel::ApplicationController
 
     respond_to do |format|
       if @page.update_attributes(params[:page])
-        save_notice("页面修改成功,可以 <a href=\"#{page_path(@page.slug)}\" target=\"_blank\">点击这里</a> 查看.")
+        save_notice("Successfully modified the page,Can <a href=\"#{page_path(@page.slug)}\" target=\"_blank\">Click here</a> View.")
         format.html { redirect_to :action => "index" }
         format.xml  { head :ok }
       else
@@ -76,7 +76,7 @@ class Cpanel::PagesController < Cpanel::ApplicationController
     end
   end
 
-  # 删除页面
+  # Deleting a page
   # DELETE /pages/1
   # DELETE /pages/1.xml
   def destroy
@@ -84,7 +84,7 @@ class Cpanel::PagesController < Cpanel::ApplicationController
     @page.destroy
 
     respond_to do |format|
-      save_notice("页面已经删除.")
+      save_notice("Page has been deleted.")
       format.html { redirect_to :action => "index" }
       format.xml  { head :ok }
     end

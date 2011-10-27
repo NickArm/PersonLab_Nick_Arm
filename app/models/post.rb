@@ -1,7 +1,7 @@
 # coding: utf-8 
 require "string_extensions"
 class Post < ActiveRecord::Base
-  validates_uniqueness_of :title, :slug, :case_sensitive => false , :message => "已经有同名的存在,请检查是否重发了."
+  validates_uniqueness_of :title, :slug, :case_sensitive => false , :message => "The same name already exists,Please check re-issued a."
   validates_presence_of :title,:body,:status
 	belongs_to :category, :counter_cache => true
   acts_as_taggable_on :tags
@@ -14,9 +14,9 @@ class Post < ActiveRecord::Base
   
   # status
   STATUS = [
-    ["请选择状态",-1],
-    ["发布",1],
-    ["草稿",2],
+    ["Please select the state",-1],
+    ["Release",1],
+    ["Draft",2],
     ].freeze
   
   # custome field

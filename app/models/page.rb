@@ -1,13 +1,13 @@
 # coding: utf-8 
 class Page < ActiveRecord::Base
-  validates_uniqueness_of :title, :slug, :case_sensitive => false , :message => "已经有同名的存在,请检查是否重发了."
+  validates_uniqueness_of :title, :slug, :case_sensitive => false , :message => "The same name already exists,Please check re-issued a."
   before_validation :safe_slug_for_validation
   
   # status
   STATUS = [
-    ["请选择状态",-1],
-    ["发布",1],
-    ["草稿",2],
+    ["Please select the state",-1],
+    ["Release",1],
+    ["Draft",2],
     ].freeze
   
   private

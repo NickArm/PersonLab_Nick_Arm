@@ -22,13 +22,13 @@ class PostsController < ApplicationController
 			end
       
       @posts = @category.posts.paginate :include => [:category],:page => page, :per_page => 5
-      set_seo_meta("博客 &raquo; 分类：#{@category.name}")        
+      set_seo_meta("Blog &raquo; Classification：#{@category.name}")        
     elsif params[:tag]    
       @posts = Post.tagged_with(params[:tag]).paginate :include => [:category],:page => page, :per_page => 5
-      set_seo_meta("博客 &raquo; Tag:#{params[:tag]}")
+      set_seo_meta("Blog &raquo; Tag:#{params[:tag]}")
     else      
       @posts = Post.paginate :include => [:category], :page => page, :per_page => 5            
-      set_seo_meta("博客")
+      set_seo_meta("Blog")
     end
   end
 

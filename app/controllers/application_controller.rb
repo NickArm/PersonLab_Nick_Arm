@@ -30,23 +30,23 @@ class ApplicationController < ActionController::Base
     @current_user = User.find_by_id(session[:user_id])
   end
 
-  # 输出404错误
+  # Output404Error
   def render_404
     render(:file => "#{RAILS_ROOT}/public/404.html", :layout => false, :status => 404)
     return
   end
   
-  # 设置主菜单的活动标签
+  # Set the main menu of the active tab
   def set_nav_actived(name = "home")
     @nav_actived = name
   end
   
-  # 设置SEO 的Meta 值
+  # Setting SEO Meta- Value
   def set_seo_meta(title,keywords = '',desc = '')
     if title
       @page_title =  "#{title}"
       if params[:page]
-        @page_title += " &raquo; (第#{params[:page]}页)"
+        @page_title += " &raquo; (First#{params[:page]}Page)"
       end
       @page_title += " &raquo; #{@setting.site_name}"
     else
@@ -56,7 +56,7 @@ class ApplicationController < ActionController::Base
     @meta_description = desc
   end
   
-  # 保存评论者信息
+  # Save Review Information
   def set_guest(author = "",url = "",email = "")
     session[:guest_author] = author 
     session[:guest_url] = url

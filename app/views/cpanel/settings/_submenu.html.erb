@@ -1,18 +1,18 @@
 <% content_for :submenu do %>
   <% if params[:action] == 'index' %>
-  <li class="current"><span>参数设置</span></li>
+  <li class="current"><span>Parameter settings</span></li>
   <% else %>
-  <li><%= link_to "参数设置", :controller => "cpanel/settings", :action => "index" %></li>
+  <li><%= link_to "Parameter settings", :controller => "cpanel/settings", :action => "index" %></li>
   <% end %>
 	<% if params[:action] == 'profile' %>
-  <li class="current"><span>管理员信息</span></li>
+  <li class="current"><span>Administrator Information</span></li>
   <% else %>
-  <li><%= link_to "管理员信息", :controller => "cpanel/settings", :action => "profile" %></li>
+  <li><%= link_to "Administrator Information", :controller => "cpanel/settings", :action => "profile" %></li>
   <% end %>
   <% if params[:action] == 'password' %>
-  <li class="current"><span>修改密码</span></li>
+  <li class="current"><span>Change Password</span></li>
   <% else %>
-  <li><%= link_to "修改密码", :controller => "cpanel/settings", :action => "password" %></li>
+  <li><%= link_to "Change Password", :controller => "cpanel/settings", :action => "password" %></li>
   <% end %>
 	
 <% end %>

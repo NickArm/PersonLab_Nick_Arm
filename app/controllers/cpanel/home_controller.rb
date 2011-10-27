@@ -30,7 +30,7 @@ class Cpanel::HomeController < Cpanel::ApplicationController
         return
       else
         @user = User.new
-        flash[:errors] = "用户名或密码不正确。"
+        flash[:errors] = "User name or password is incorrect。"
       end
     end
     

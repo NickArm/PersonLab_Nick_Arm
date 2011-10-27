@@ -42,7 +42,7 @@ class Cpanel::MenusController < Cpanel::ApplicationController
     @menu = Menu.new(params[:menu])
 
     if @menu.save
-      flash[:notice] = '菜单创建成功.'
+      flash[:notice] = 'Menu to create a successful.'
       redirect_to(cpanel_menus_path) 
     else
       render "edit"
@@ -56,7 +56,7 @@ class Cpanel::MenusController < Cpanel::ApplicationController
 
     respond_to do |format|
       if @menu.update_attributes(params[:menu])
-        flash[:notice] = '菜单修改成功.'
+        flash[:notice] = 'Successfully modified the menu.'
         format.html { redirect_to(cpanel_menus_url) }
         format.xml  { head :ok }
       else

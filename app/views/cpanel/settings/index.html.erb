@@ -5,11 +5,11 @@
   <%= render "shared/error_messages", :target => @setting %>
 	<table border="0" cellspacing="0" cellpadding="0">
 		<tr class="row">
-			<td class="field">站点名称</td>
+			<td class="field">Site Name</td>
 			<td><%= f.text_field :site_name, :class => "text middle"  %></td>
 		</tr>
 		<tr class="row">
-			<td class="field">子标题</td>
+			<td class="field">Sub-title</td>
 			<td><%= f.text_field :sub_title, :class => "text long"  %></td>
 		</tr>
 		<tr class="row">
@@ -39,14 +39,14 @@
 			</td>
 		</tr>
 		<tr class="row">
-			<td class="field">首页个人信息</td>
+			<td class="field">Home Personal Information</td>
 			<td>
 				<%= f.text_area :home_show, :class => "text long"  %>
 			</td>
 		</tr>
 		<tr class="row buttons">
 			<td class="field"></td>
-			<td><%= f.submit '保存', :class => "submit" %></td>
+			<td><%= f.submit 'Save', :class => "submit" %></td>
 		</tr>
 	</table>
 <% end %>

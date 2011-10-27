@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<title>PersonLab 管理后台</title>
+	<title>PersonLab Admin</title>
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <link rel="shortcut icon" href="/favicon.ico?v=001">
   <%= csrf_meta_tag %>
@@ -16,14 +16,14 @@
 <body>
 <div id="top">
 	<div class="inner_panel">
-		<div id="site_name"><%= link_to "PersonLab 管理后台", :controller => "cpanel/home", :action => "index" %></div>
+		<div id="site_name"><%= link_to "PersonLab Admin", :controller => "cpanel/home", :action => "index" %></div>
 		<div class="userbar">
 			<% if @current_user %>
-			你好, <span class="name"><%= @current_user.name %></span>
+			Hello, <span class="name"><%= @current_user.name %></span>
 			<% end %>			
-			<%= link_to "查看网站", {:controller => "/home", :action => "index"},:target => '_blank' %> |
+			<%= link_to "View Website", {:controller => "/home", :action => "index"},:target => '_blank' %> |
 			<% if @current_user %>
-			<%= link_to "退出", :controller => "cpanel/home", :action => "logout" %>
+			<%= link_to "Quit", :controller => "cpanel/home", :action => "logout" %>
 			<% end %>
 		</div>
 	</div>	
@@ -32,29 +32,29 @@
 	<div class="inner_panel">
 	<ul>
 		<% if params[:controller] == "cpanel/home" %>
-		<li class="current"><span>首页</span></li>
+		<li class="current"><span>Home</span></li>
 		<% else %>
-		<li><%= link_to "首页", :controller => "cpanel/home", :action => "index" %></li>
+		<li><%= link_to "Home", :controller => "cpanel/home", :action => "index" %></li>
 		<% end %>
 		<% if params[:controller] == "cpanel/pages" %>
-		<li class="current"><span>页面</span></li>
+		<li class="current"><span>Page</span></li>
 		<% else %>
-		<li><%= link_to "页面", :controller => "cpanel/pages", :action => "index" %></li>
+		<li><%= link_to "Page", :controller => "cpanel/pages", :action => "index" %></li>
 		<% end %>
 		<% if params[:controller] == "cpanel/posts" or params[:controller] == "cpanel/categories" %>
-		<li class="current"><span>文章</span></li>
+		<li class="current"><span>Article</span></li>
 		<% else %>
-		<li><%= link_to "文章", :controller => "cpanel/posts", :action => "index" %></li>
+		<li><%= link_to "Article", :controller => "cpanel/posts", :action => "index" %></li>
 		<% end %>
 		<% if params[:controller] == "cpanel/menus" %>
-		<li class="current"><span>菜单</span></li>
+		<li class="current"><span>Menu</span></li>
 		<% else %>
-		<li><%= link_to "菜单", :controller => "cpanel/menus", :action => "index" %></li>
+		<li><%= link_to "Menu", :controller => "cpanel/menus", :action => "index" %></li>
 		<% end %>
         <% if params[:controller] == "cpanel/settings" %>
-          <li class="current"><span>设置</span></li>
+          <li class="current"><span>Set up</span></li>
 		<% else %>
-          <%= link_to "设置", :controller => "cpanel/settings", :action => "index" %>
+          <%= link_to "Set up", :controller => "cpanel/settings", :action => "index" %>
         <% end %>
 	</ul>
 	</div>
