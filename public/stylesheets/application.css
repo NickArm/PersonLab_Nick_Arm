@@ -95,15 +95,15 @@ a:hover {
 }
 
 #header {
+    
+}
+
+#header .menu {
   background: black;  
   line-height:25px;
   height:28px;
   padding-left: 15px;
-  padding-right: 15px;  
-}
-
-#header .menu {
-  
+  padding-right: 15px;
 }
 
 #header .menu span {
