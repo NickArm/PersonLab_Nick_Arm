@@ -135,6 +135,7 @@ a:hover {
 #header .title a:visited { font-size:45px; color:black; text-decoration: none;}
 #header .title {height: 80px;}
 #header .tittle_name{}
+#header .aka{color: grey; font-style: italic;}
 #header .tittle_logo{float: right;}
 #header .tittle_logo img {width:100px;}
 
