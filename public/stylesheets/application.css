@@ -265,8 +265,8 @@ float: left;
 padding-right: 5px;
 }
 
-#tweet  { margin-top:40px; width: 70%; font-style:italic; }
-#tweet h2 { font-size:20px; font-family: Georgia, Palatino, 'Palatino Linotype', serif;
+#tweetbox  { margin-top:40px; width: 70%; font-style:italic; }
+#tweetbox h2 { font-size:20px; font-family: Georgia, Palatino, 'Palatino Linotype', serif;
    font-weight: bold;
    font-style: italic;
    font-size: 120%;
@@ -275,10 +275,10 @@ padding-right: 5px;
    text-transform: lowercase;
 }
 
-#tweet li { margin-bottom:10px; }
-#tweet .text { margin:4px 0; }
-#tweet .info { margin:0; color:#999; font-size:12px; }
-#tweet a { color:#333; text-decoration:underline; margin:0 2px;}
+#tweetbox li { margin-bottom:10px; }
+#tweetbox .text { margin:4px 0; }
+#tweetbox .info { margin:0; color:#999; font-size:12px; }
+#tweetbox a { color:#333; text-decoration:underline; margin:0 2px;}
 
 .form {}
 .form .row, .form tr.row td { padding:5px 0; }
