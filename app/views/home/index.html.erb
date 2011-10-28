@@ -8,7 +8,7 @@
       <span class="date">Posted on <%= item.created_at.to_date %></span>
 </div>
 <div>
-<a target="_blank" href="http://twitter.com/home/?status=RT @Nick_Arm <%= item.title %> : http://personallab.heroku.com<%= blog_path(item.slug) %>">reTweet it</a>
+<a target="_blank" href="http://twitter.com/home/?status=RT @Nick_Arm <%= item.title %> : http://personallab.heroku.com<%= blog_path(item.slug) %>"><img src="/images/retweet.png"/></a>
 </div>
 </li>
   <% end %>
