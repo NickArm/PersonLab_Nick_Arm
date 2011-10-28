@@ -9,6 +9,9 @@
 </div>
 <div>
 <a target="_blank" href="http://twitter.com/home/?status=RT @Nick_Arm <%= item.title %> : http://personallab.heroku.com<%= blog_path(item.slug) %>"><img src="/images/retweet.png"/></a>
+
+<a href="http://www.facebook.com/sharer.php?u=http://personallab.heroku.com<%= blog_path(item.slug) %>&t=<%= item.title %>" target="blank"><img src="/images/fb-share.png"/></a>
+
 </div>
 </li>
   <% end %>
