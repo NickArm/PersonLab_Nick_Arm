@@ -4,11 +4,6 @@
   <% for item in @recent_posts %>
     <li>
 
-<div>
-      <a href="<%= blog_path(item.slug) %>" title="<%= item.title %>"><%= truncate(item.title, :length => 30) %></a> 
-      <span class="date">Posted on <%= item.created_at.to_date %></span>
-</div>
-
 <div style="float:left;padding:4px;">
 <script type="text/javascript">
 tweetmeme_url = 'http://personallab.heroku.com<%= blog_path(item.slug) %>';
@@ -16,6 +11,15 @@ tweetmeme_source = 'Nick_Arm';
 </script>
 <script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
 </div>
+
+
+
+<div>
+      <a href="<%= blog_path(item.slug) %>" title="<%= item.title %>"><%= truncate(item.title, :length => 30) %></a> 
+      <span class="date">Posted on <%= item.created_at.to_date %></span>
+</div>
+
+
 
 </li>
   <% end %>
