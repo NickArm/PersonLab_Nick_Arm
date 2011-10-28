@@ -265,6 +265,11 @@ float: left;
 padding-right: 5px;
 }
 
+ul.archive li .facebookshare{
+float: left;
+padding-right: 5px;
+}
+
 #tweetbox  { margin-top:40px; width: 70%; font-style:italic; }
 #tweetbox h2 { font-size:20px; font-family: Georgia, Palatino, 'Palatino Linotype', serif;
    font-weight: bold;
