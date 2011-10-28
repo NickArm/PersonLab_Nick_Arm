@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <%= csrf_meta_tag %>
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text&subset=latin' rel='stylesheet' type='text/css'>
-	<%= stylesheet_link_tag "application", :cache => "cached_application" %>
+	<%= stylesheet_link_tag "application","jquery.tweet", :cache => "cached_application" %>
 	<%= yield :styles -%>
 	<%= auto_discovery_link_tag(:rss,(FEED_URL || rss_blogs_url),:title => 'Subscribe to new blog') %>
 <%= javascript_include_tag "rails","will_paginate","common","jquery.tweet", :cache => "cached_application" %>
