@@ -52,14 +52,14 @@ end
 # *********************    CUSTOM CONFIGS    **********************
 # *****************************************************************
 # you app domain
-APP_DOMAIN = 'youdomain.com'
+APP_DOMAIN = 'nickarm.me'
 
 # custom feed url, set false to use system feed url
 # FEED_URL = "http://feeds.feedburner.com/huacnlee"
 FEED_URL = false
 
 # Google Analytics Account ID
-GOOGLE_ANALYTICS_ID = false
+GOOGLE_ANALYTICS_ID = 'UA-20052073-2'
 
 # Custom html code in footer.
 FOOTER_HTML = ""
