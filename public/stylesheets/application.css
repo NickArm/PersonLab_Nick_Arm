@@ -149,8 +149,11 @@ a:hover {
 
 #sidebar {
   float: right;
-  line-height: 0;
   margin-top:50px;
+}
+
+#sidebar ul li{
+
 }
 
 #sidebar .section {
