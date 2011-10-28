@@ -3,24 +3,13 @@
 <% if !@recent_posts.blank?%>
   <% for item in @recent_posts %>
     <li>
-
-<div style="float:left;padding:4px;">
-<script type="text/javascript">
-tweetmeme_url = 'http://personallab.heroku.com<%= blog_path(item.slug) %>';
-tweetmeme_source = 'Nick_Arm';
-</script>
-<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js">tweetmeme_style = "compact";</script>
-</div>
-
-
-
 <div>
       <a href="<%= blog_path(item.slug) %>" title="<%= item.title %>"><%= truncate(item.title, :length => 30) %></a> 
       <span class="date">Posted on <%= item.created_at.to_date %></span>
 </div>
-
-<a target="_blank" href="http://twitter.com/home/?status=RT @Nick_Arm <%= item.title %> : http://personallab.heroku.com<%= blog_path(item.slug) %>">ReTweet This Post</a>
-
+<div>
+<a target="_blank" href="http://twitter.com/home/?status=RT @Nick_Arm <%= item.title %> : http://personallab.heroku.com<%= blog_path(item.slug) %>">reTweet it</a>
+</div>
 </li>
   <% end %>
 <% end %>
