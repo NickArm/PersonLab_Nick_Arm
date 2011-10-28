@@ -146,7 +146,9 @@ a:hover {
   margin-right: 35px;
   max-width: 1280px;
 }
-
+#footer{
+  font-size:9pt;
+}
 
 #sidebar {
   float: right;
