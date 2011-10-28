@@ -264,8 +264,16 @@ float: left;
 padding-right: 5px;
 }
 
-#tweet  { margin-top:40px; }
-#tweet h2 { font-size:20px;}
+#tweet  { margin-top:40px; width: 70%; }
+#tweet h2 { font-size:20px; font-family: Georgia, Palatino, 'Palatino Linotype', serif;
+   font-weight: bold;
+   font-style: italic;
+   font-size: 120%;
+   line-height: 1;
+   color: black;
+   text-transform: lowercase;
+}
+
 #tweet li { margin-bottom:10px; }
 #tweet .text { margin:4px 0; }
 #tweet .info { margin:0; color:#999; font-size:12px; }
