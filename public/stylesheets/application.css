@@ -164,6 +164,7 @@ a:hover {
 
 #sidebar ul li{
   height: 70px;
+  overflow:hidden;
 }
 
 #sidebar ul li img{
