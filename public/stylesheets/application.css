@@ -153,6 +153,12 @@ a:hover {
   margin-top:50px;
 }
 
+#sidebar ul{
+  background-color: silver;
+  background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+  background-image: -moz-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.5) 35px, rgba(255, 255, 255, 0.5) 70px);
+}
+
 #sidebar ul li{
   height: 70px;
 }
