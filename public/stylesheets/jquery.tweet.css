@@ -12,7 +12,6 @@
 		margin: 0;
 		padding: 0;
 		overflow-y: hidden;
-		background-color: #8ADEE2;
 	}
 	
 		.tweet_list .awesome,
@@ -31,7 +30,7 @@
 			}
 		
 		.tweet_list .tweet_even {
-			background-color: #91E5E7;
+			
 		}
 		
 		.tweet_list .tweet_avatar {
