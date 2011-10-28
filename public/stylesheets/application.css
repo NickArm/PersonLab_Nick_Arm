@@ -329,7 +329,9 @@ div.field .hint { font-size:12px; color:#999;}
 .successMessage {margin:10px 0; background:#CF9; padding:10px; border: 2px solid #6C0; }
 
 
-#dsq-global-toolbar .dsq-clearfix{
-	height:27px;
+.dsq-reply {
+    clear: none;
+    margin: 0;
+    position: relative;
 }
 
