@@ -265,7 +265,7 @@ float: left;
 padding-right: 5px;
 }
 
-#tweet  { margin-top:40px; width: 70%; }
+#tweet  { margin-top:40px; width: 70%; font-style:italic; }
 #tweet h2 { font-size:20px; font-family: Georgia, Palatino, 'Palatino Linotype', serif;
    font-weight: bold;
    font-style: italic;
