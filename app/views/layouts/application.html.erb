@@ -15,7 +15,7 @@
 	<%= stylesheet_link_tag "application", :cache => "cached_application" %>
 	<%= yield :styles -%>
 	<%= auto_discovery_link_tag(:rss,(FEED_URL || rss_blogs_url),:title => 'Subscribe to new blog') %>
-	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
   <%= javascript_include_tag "rails","will_paginate","common" :cache => "cached_application" %>
 </head>
