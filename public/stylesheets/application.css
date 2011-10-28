@@ -259,6 +259,11 @@ font-size: 14pt;
 display:block;
 }
 
+ul.archive li .retweet{
+float: left;
+padding-right: 5px;
+}
+
 #tweet  { margin-top:40px; }
 #tweet h2 { font-size:20px;}
 #tweet li { margin-bottom:10px; }
