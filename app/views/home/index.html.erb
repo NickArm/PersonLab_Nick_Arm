@@ -4,7 +4,7 @@
   <% for item in @recent_posts %>
     <li>
       <a href="<%= blog_path(item.slug) %>" title="<%= item.title %>"><%= truncate(item.title, :length => 30) %></a> 
-      <span class="date">Posted on<%= item.created_at.to_date %></span>
+      <span class="date">Posted on <%= item.created_at.to_date %></span>
     </li>
   <% end %>
 <% end %>
