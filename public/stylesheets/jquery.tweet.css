@@ -1,10 +1,19 @@
 .tweet,
 .query {
-	font: 120% Georgia, serif;
+	font: 100% Georgia, serif;
 	color: #085258;
 }
 
-	.tweet_list {
+.tweet h2 { font-size:20px; font-family: Georgia, Palatino, 'Palatino Linotype', serif;
+   font-weight: bold;
+   font-style: italic;
+   font-size: 120%;
+   line-height: 1;
+   color: black;
+   text-transform: lowercase;
+}
+
+.tweet_list {
 		-webkit-border-radius: 0.5em;
 		-moz-border-radius: 0.5em;
 		border-radius: 0.5em;
@@ -14,12 +23,12 @@
 		overflow-y: hidden;
 	}
 	
-		.tweet_list .awesome,
-		.tweet_list .epic {
+.tweet_list .awesome,
+.tweet_list .epic {
 			text-transform: uppercase;
 		}
 		
-		.tweet_list li {
+.tweet_list li {
 			overflow-y: auto;
 			overflow-x: hidden;
 			padding: 0.5em;
@@ -29,11 +38,11 @@
 				color: #0C717A;
 			}
 		
-		.tweet_list .tweet_even {
+.tweet_list .tweet_even {
 			
 		}
 		
-		.tweet_list .tweet_avatar {
+.tweet_list .tweet_avatar {
 			padding-right: .5em; float: left;
 		}
 		
