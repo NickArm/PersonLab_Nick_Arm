@@ -5,7 +5,7 @@
 	      <h1>
 	        <a href="<%= blog_path(item.slug) %>" title="<%= item.title %>"><%= truncate(item.title,:length => 80) %></a>
 	      </h1>
-	      <div class="date"><a href="<%= category_blogs_path(item.category.slug) %>" title="<%= item.category.name %>"><%= item.category.name %></a> - <%= l item.created_at, :format => :long %></div>
+	      <div class="date"><a href="<%= category_blogs_path(item.category.slug) %>" title="<%= item.category.name %>"><%= item.category.name %></a> - <%= l item.created_at, :format => :long %></div><%= item.category.name %>
 	      <div class="body">
 	        <%= raw item.summary %>
 	      </div>		
