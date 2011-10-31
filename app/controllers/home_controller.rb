@@ -95,6 +95,6 @@ class HomeController < ApplicationController
     redirect_to request.referer
   end
   def mobile_menu
-  redirect_to: :action => "home/mobile_menu"
+  
   end
 end
