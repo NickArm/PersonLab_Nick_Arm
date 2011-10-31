@@ -94,4 +94,6 @@ class HomeController < ApplicationController
     session[:user_id] = nil
     redirect_to request.referer
   end
+  def mobile_menu
+  end
 end
