@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title><%= raw (@page_title ? @page_title : @setting.site_name) %></title>
+	<meta name="viewport" content="width=320,user-scalable=false" /> 
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="description" content="<%= @meta_description %>" />
+	<meta name="keywords" content="<%= @meta_keywords %>" />
+  <link rel="shortcut icon" href="/favicon.ico?v=001" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <%= csrf_meta_tag %>
+  <link href='http://fonts.googleapis.com/css?family=Crimson+Text&subset=latin' rel='stylesheet' type='text/css'>
+	<%= stylesheet_link_tag "mobile","jquery.tweet", :cache => "cached_application" %>
+	<%= yield :styles -%>
+	<%= auto_discovery_link_tag(:rss,(FEED_URL || rss_blogs_url),:title => 'Subscribe to new blog') %>
+<%= javascript_include_tag "rails","will_paginate","common","jquery.tweet", :cache => "cached_application" %>
+	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+
+  
+</head>
+<body>
+<div id="body">
+	<div id="header">
+	<div class="title">
+	<span class="title_name"><a id="site_name" href="/"><%= @setting.site_name %></a></span>
+	<span class="aka">aka nickmix</span>
+	<span class="tittle_logo"><%= image_tag("rsslogo.png")%></span>	
+</div>		
+	</div>  
+	<div id="main">    
+	</div>
+	<div id="footer">
+		<% if !FOOTER_HTML.blank? %>
+		<p>
+			<%=raw FOOTER_HTML %>
+		</p>
+		<% end %>
+    <p class="copyright">
+      Powered by opensource project <a href="http://github.com/huacnlee/personlab" target="_blank">PersonLab</a> running on <a href="https://api.heroku.com/myapps/personallab" target="_blank">Heroku</a> + <a href="http://www.rubyonrails.org" target="_blank">Rails3</a>, Theme by <a href="#" target="_blank">Nick Armenis</a>.Version: <%= APP_VERSION %>.<br />For better view use <a href="http://www.mozilla.org/el/firefox/new/">Firefox</a>/<a href="http://www.google.com/chrome?hl=el">Chrome</a> ($%#@# IE)
+    
+    </p>		
+	</div>
+</div>
+<%= yield :scripts %>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = '<%= @setting.disqus_shortname %>'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<% if !GOOGLE_ANALYTICS_ID.blank? %>
+<script type='text/javascript'>var _gaq = _gaq || []; _gaq.push(['_setAccount', '<%= GOOGLE_ANALYTICS_ID %>']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+<% end %>
+</body>
+</html>

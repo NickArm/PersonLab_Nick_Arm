@@ -1,0 +1,337 @@
+ /*
+ * Copyright 2009 Bret Taylor
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License. You may obtain
+ * a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ */
+html{
+   min-height:100%;
+   background-color:silver;
+   background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+   background-image:-moz-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.5) 35px, rgba(255, 255, 255, 0.5) 70px)
+}
+
+
+body {
+  -moz-tab-size: 4;
+    background: none repeat scroll 0 0 white;
+    line-height: 1.5;
+    margin: 20px auto;
+    min-height: 570px;
+    padding: 20px 30px 0;
+    width: 920px;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    -moz-box-shadow: 0 0 5px 5px #888;
+    box-shadow: 0 0 5px 5px #888;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+body,
+textarea {
+  font-family: Georgia, serif;
+  font-size: 12pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+td {
+  border: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+pre,
+code {
+  font-family: monospace;
+  color: #050;
+}
+
+pre {
+  margin: 17pt;
+  margin-right: 0;
+  padding-left: 15pt;
+  border-left: 1px solid #ddd;
+  line-height: 16pt;
+  overflow: auto;
+}
+
+a,
+a code {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#header {
+    
+}
+
+#header .menu {
+  height: 28px;
+  padding: 0.3em 20px;
+  z-index: 2;
+  padding: 0.3em 20px;
+  margin-right: 0px;
+  list-style: none;
+  background: black;
+  font-family: Georgia, Palatino, 'Palatino Linotype', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 120%;
+  line-height: 1;
+  color: white;
+  text-transform: lowercase;
+  -moz-border-radius: 9999px 9999px 9999px 9999px;
+  -webkit-border-radius: 9999px 9999px 9999px 9999px;
+  border-radius: 9999px 9999px 9999px 9999px;
+  -moz-box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
+  -webkit-box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
+   box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
+}
+
+#header .menu span {
+  margin-left: 18px;
+}
+
+#header .menu a { color:#FFF;}
+#header .menu a:hover {text-decoration: none;}
+#header .title a:link,
+#header .title a:hover,
+#header .title a:visited { font-size:45px; color:black; text-decoration: none;}
+#header .title {height: 80px;}
+#header .tittle_name{}
+#header .aka{color: grey; font-style: italic;}
+#header .tittle_logo{float: right;}
+#header .tittle_logo img {width:100px;}
+
+#footer,
+#main {
+  margin: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+  max-width: 1280px;
+}
+#footer{
+  font-size:9pt;
+}
+
+#sidebar {
+  float: right;
+  margin-top:50px;
+}
+
+#sidebar ul{
+  background-color: silver;
+  background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+  background-image: -moz-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.5) 35px, rgba(255, 255, 255, 0.5) 70px);
+  -webkit-box-shadow: 0 0 5px 5px #888;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+}
+
+#sidebar ul li{
+  height: 70px;
+  overflow:hidden;
+}
+
+#sidebar ul li img{
+  width:60px;
+}
+
+#sidebar .section {
+  padding-bottom: 75px;
+}
+
+#sidebar .section h2{
+  float:right;
+  margin:none;
+}
+
+#sidebar .headline {
+  padding-top: 15px;
+}
+
+#sidebar .icons {
+  padding-top: 0px;
+  padding-right: 9px;
+  line-height: 9px;
+  float:left;
+}
+
+#sidebar .icons td.last {
+  padding-right: 0;
+}
+
+#content { margin-right: 250px; }
+
+#content h1 {
+  font-size: 20pt;
+}
+
+.entry h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.entry h2 {
+  font-size: 15pt;
+  margin-bottom: 3pt;
+}
+
+.entry {
+  margin-bottom: 2em;
+}
+
+#content ul, #content ol { margin:8px 15px; padding:5px;}
+
+.entry .date {
+  margin-top: 3px;
+}
+.entry .date a { color:#000; text-decoration: underline;}
+
+.entry .body {
+  margin-top: 1em;
+}
+
+.entry .footer {
+  margin-top: 1em;
+}
+
+#content p,
+#content li {
+  line-height: 17pt;
+}
+
+#content p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+ul{
+list-style-type: none;
+padding:5px;
+}
+
+ul.archive {
+margin: 0;
+padding: 0;
+width:60%;
+}
+ul.archive li {
+margin-bottom: 1em;
+}
+ul.archive li .date { color:#999; margin-left:0px; font-size:14px;}
+ul.archive a {
+font-family: Georgia, Palatino, 'Palatino Linotype', serif;
+font-size: 18pt;
+display:block;
+}
+
+ul.archive li .retweet{
+float: left;
+padding-right: 5px;
+}
+
+ul.archive li .facebookshare{
+float: left;
+padding-right: 5px;
+}
+
+#tweetbox  { margin-top:40px; width: 70%; font-style:italic; }
+#tweetbox h2 { font-size:20px; font-family: Georgia, Palatino, 'Palatino Linotype', serif;
+   font-weight: bold;
+   font-style: italic;
+   font-size: 120%;
+   line-height: 1;
+   color: black;
+   text-transform: lowercase;
+}
+
+#tweetbox li { margin-bottom:10px; }
+#tweetbox .text { margin:4px 0; }
+#tweetbox .info { margin:0; color:#999; font-size:12px; }
+#tweetbox a { color:#333; text-decoration:underline; margin:0 2px;}
+
+.form {}
+.form .row, .form tr.row td { padding:5px 0; }
+textarea.text,input.text { width:300px; border:1px solid #DDD; font-size:12px; 
+  border-left:1px solid #AAA; border-top:1px solid #AAA; padding:2px; }
+textarea.text:focus, input.text:focus { background:#fbf5bf; outline:0; }
+input.checkbox { width:auto; }
+input.button { border:normal; padding:5px 20px; }
+textarea.middle,input.middle { width:500px; }
+textarea.middle { height:100px; }
+textarea.long,input.long { width:800px; }
+
+/* old code style hack, if you don't need, remove it. */
+.highlight pre,pre.textmate-source, pre {border: 1px solid #DEDEDE;background-color: ghostWhite;font-size:13px; line-height:150%; padding: 0.25em 0.5em 0.5em;overflow: auto;word-wrap: normal;}
+pre.textmate-source pre { border:0; padding:0; }
+.highlight .tt,.highlight .linenos,.highlight_top { display:none; }
+
+
+/* pagination style */
+.pagination { background: white; margin-bottom:15px;  text-align: left; }
+  .pagination a, 
+  .pagination span, 
+  .pagination em { padding: .5em .7em; font-size: 13px; margin-right: 2px; }
+  .pagination span.disabled { color: #999; border: 1px solid #EEE; }
+  .pagination a:link,
+  .pagination a:visited { text-decoration: none; color: #000;	background:#fff; border: 1px solid #222; }
+  .pagination em, 
+  .pagination a:hover, 
+  .pagination a:focus {color: #FFF;background: #222; border:1px solid #000; font-style:normal; }
+  .pagination .page_info { background: #2E6AB1; color: white; padding: .4em .6em; width: 22em; margin-bottom: .3em; text-align: center; }
+  .pagination .page_info b {color: #003; background: #6aa6ed;padding: .1em .25em; } 
+  .pagination:after {content: ".";display: block;height: 0;clear: both;visibility: hidden; }
+  .pagination span.gap { padding:0;}
+  * html .pagination {height: 1%; }
+  *:first-child+html .pagination {overflow: hidden; }
+
+div.field, div.actions { margin-bottom: 10px;}
+div.field .hint { font-size:12px; color:#999;}
+
+.field_with_errors {  display:inline;  color:#b16125;}
+.errorExplanation { margin:10px 0; background:#FFF8E7; padding:10px; border: 2px solid #F96;}
+.errorExplanation h2 { font-size: 14px; line-height: 180%;}
+.errorExplanation p { color:#999;}
+.errorExplanation ul { font-size: 12px; margin-top: 8px; list-style: square inside; margin-left: 20px;}
+.filter { text-align: right; line-height: 22px; }
+  .filter label	{color: #999;}
+
+.successMessage {margin:10px 0; background:#CF9; padding:10px; border: 2px solid #6C0; }
+
