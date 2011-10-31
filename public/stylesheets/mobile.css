@@ -16,24 +16,13 @@
 html{
    min-height:100%;
    background-color:silver;
-   background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
-   background-image:-moz-repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.5) 35px, rgba(255, 255, 255, 0.5) 70px)
 }
 
 
 body {
-  -moz-tab-size: 4;
-    background: none repeat scroll 0 0 white;
     line-height: 1.5;
     margin: 20px auto;
     min-height: 570px;
-    padding: 20px 30px 0;
-    width: 920px;
-    -webkit-box-shadow: 0 0 5px 5px#888;
-    -moz-box-shadow: 0 0 5px 5px #888;
-    box-shadow: 0 0 5px 5px #888;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
 }
 
 body,
@@ -116,12 +105,6 @@ a:hover {
   line-height: 1;
   color: white;
   text-transform: lowercase;
-  -moz-border-radius: 9999px 9999px 9999px 9999px;
-  -webkit-border-radius: 9999px 9999px 9999px 9999px;
-  border-radius: 9999px 9999px 9999px 9999px;
-  -moz-box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
-  -webkit-box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
-   box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
 }
 
 #header .menu span {
