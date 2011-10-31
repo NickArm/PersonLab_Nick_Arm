@@ -12,16 +12,14 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <%= csrf_meta_tag %>
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text&subset=latin' rel='stylesheet' type='text/css'>
-	<%= stylesheet_link_tag "mobile","jquery.tweet", :cache => "cached_application" %>
+	<%= stylesheet_link_tag "mobile","jquery.tweet","jquery.mobile-1.0rc2.min", :cache => "cached_application" %>
 	<%= yield :styles -%>
 	<%= auto_discovery_link_tag(:rss,(FEED_URL || rss_blogs_url),:title => 'Subscribe to new blog') %>
-<%= javascript_include_tag "rails","will_paginate","common","jquery.tweet", :cache => "cached_application" %>
+        <%= javascript_include_tag "rails","will_paginate","common","jquery.tweet","jquery.mobile-1.0rc2.min", :cache => "cached_application" %>
 	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-
-  
 </head>
 <body>
-<div id="body">
+        <div id="body">
 	<div id="header">
 	<div class="title">
 	<span class="title_name"><a id="site_name" href="/"><%= @setting.site_name %></a></span>
@@ -32,7 +30,7 @@
 	<div id="main">   
         <span class="tittle_logo"><%= image_tag("rsslogo.png")%></span>	 
         <div id="content">
-        <a href="#"><h3>Social me</h3></a>
+        <a href="#"><h3>Enter site</h3></a>
         </div>
 	</div>
 	<div id="footer">
