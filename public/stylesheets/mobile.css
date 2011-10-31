@@ -8,7 +8,9 @@ html{
 
 
 body {
-    margin: 5px auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 body,
@@ -101,7 +103,7 @@ a:hover {
 #header .menu a:hover {text-decoration: none;}
 #header .title a:link,
 #header .title a:hover,
-#header .title a:visited { font-size: 30px; color:black; text-decoration: none;}
+#header .title a:visited { font-size: 25pt; color:black; text-decoration: none;}
 #header .title {text-align: center; padding-bottom: 10px;}
 #header .tittle_name{}
 #header .aka{color: grey; font-style: italic;}
