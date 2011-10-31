@@ -19,36 +19,8 @@
         <%= javascript_include_tag "rails","will_paginate","common","jquery.tweet","jquery.mobile-1.0rc2.min", :cache => "cached_application" %>
 </head>
 <body>
-        
-        <div id="body">
 
-	<div id="header">
-	<div class="title">
-	<span class="title_name"><a id="site_name" href="/"><%= @setting.site_name %></a></span>
-	<span class="aka">aka nickmix</span>
-        </div>		
-	</div>  
-	<div id="main">   
-        <span class="tittle_logo"><%= image_tag("rsslogo.png")%></span>	 
-        <div id="content">
-        <a href="/home/mobile_menu">Enter</a>
-        <%= yield %>
-        </div>
-	</div>
-	<div id="footer">
-		<% if !FOOTER_HTML.blank? %>
-		<p>
-			<%=raw FOOTER_HTML %>
-		</p>
-		<% end %>
-    <p class="copyright">
-      Powered by opensource project <a href="http://github.com/huacnlee/personlab" target="_blank">PersonLab</a> running on <a href="https://api.heroku.com/myapps/personallab" target="_blank">Heroku</a> + <a href="http://www.rubyonrails.org" target="_blank">Rails3</a>, Theme by <a href="#" target="_blank">Nick Armenis</a>.Version: <%= APP_VERSION %>.<br />For better view use <a href="http://www.mozilla.org/el/firefox/new/">Firefox</a>/<a href="http://www.google.com/chrome?hl=el">Chrome</a> ($%#@# IE)<%= link_to "REGULAR SITE", :controller => "home", :action => "set_layout", :mobile => "0" %>
-    
-    </p>		
-	</div>
-</div>
-
-<%= yield :scripts %>
+<%= yield %>
 
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
