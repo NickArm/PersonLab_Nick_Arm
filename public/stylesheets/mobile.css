@@ -165,8 +165,8 @@ a:hover {
 #content { 
   margin-bottom: 20px;
   background-color: #212223;
-  -webkit-box-shadow: 0 0 3px 3px#888;
-  -moz-box-shadow: 0 0 3px 3px#888;	
+  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);	
   }
 
 #content h1 {
