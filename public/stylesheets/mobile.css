@@ -6,7 +6,6 @@ html{
    background-color:silver;
 }
 
-
 body {
     margin-right: 5px;
     margin-left: 5px;
@@ -15,7 +14,7 @@ body {
 
 body,
 textarea {
-  font-family: Georgia, serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
   font-size: 12pt;
 }
 
@@ -163,7 +162,12 @@ a:hover {
   padding-right: 0;
 }
 
-#content { }
+#content { 
+  margin-bottom: 20px;
+  background-color: #212223;
+  -webkit-box-shadow: 0 0 3px 3px#888;
+  -moz-box-shadow: 0 0 3px 3px#888;	
+  }
 
 #content h1 {
   font-size: 20pt;
