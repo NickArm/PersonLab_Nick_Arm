@@ -75,7 +75,12 @@ a:hover {
 }
 
 #header {
-    
+    	height: 60px;
+	margin-bottom: 20px;
+	background-color: #212223;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 #header .menu {
@@ -103,7 +108,7 @@ a:hover {
 #header .menu a:hover {text-decoration: none;}
 #header .title a:link,
 #header .title a:hover,
-#header .title a:visited { font-size: 25pt; color:black; text-decoration: none;}
+#header .title a:visited { font-size: 25pt; color:silver; text-decoration: none;}
 #header .title {text-align: center; padding-bottom: 10px;}
 #header .tittle_name{}
 #header .aka{color: grey; font-style: italic;}
