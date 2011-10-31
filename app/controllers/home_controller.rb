@@ -3,6 +3,11 @@ class HomeController < ApplicationController
   caches_page :show
   caches_action :share, :expires_in => 10.seconds
   
+  #change layout regular/mobile
+  def set_layout
+ 	session["layout"] = (params[:mobile] == "1" ? "mobile" : "normal")
+ 	redirect_to :action => "index"
+  end
   def index
     set_seo_meta(nil,@setting.meta_keywords,@setting.meta_description)
     set_nav_actived("home")
