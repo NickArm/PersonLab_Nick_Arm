@@ -19,7 +19,7 @@
         <%= javascript_include_tag "rails","will_paginate","common","jquery.tweet","jquery.mobile-1.0rc2.min", :cache => "cached_application" %>
 </head>
 <body>
-        <div data-role="page"> 
+        
         <div id="body">
 
 	<div id="header">
@@ -31,7 +31,7 @@
 	<div id="main">   
         <span class="tittle_logo"><%= image_tag("rsslogo.png")%></span>	 
         <div id="content">
-        <a href="/home/mobile_menu.html.reb">Enter</a>
+        <a href="/home/mobile_menu">Enter</a>
         </div>
 	</div>
 	<div id="footer">
@@ -46,7 +46,7 @@
     </p>		
 	</div>
 </div>
-</div>
+
 <%= yield :scripts %>
 
 <script type="text/javascript">
